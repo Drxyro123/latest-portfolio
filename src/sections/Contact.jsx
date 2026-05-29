@@ -42,10 +42,10 @@ export const Contact = () => {
         SetSubmitStatus({ type: null, message: " "});
         try{
             const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
-            const templatedId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
-            const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_ID;
+            const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+            const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-            if (!serviceId || !templatedId || !publicKey){
+            if (!serviceId || !templateId || !publicKey){
                 throw new Error(
                     "EmailJS configuration is missing. Please check your environment variables."
                 );
@@ -53,7 +53,7 @@ export const Contact = () => {
 
             await emailjs.send(
                 serviceId,
-                templatedId,
+                templateId,
                 {
                     name: formData.name,
                     email: formData.email,
@@ -68,12 +68,13 @@ export const Contact = () => {
             });
             setFormData({ name: "", email: "", message: "" });
         } catch (err) {
-            console.error("EmailJS error:", error);
-            SetSubmitStatus({
-                type: "error",
-                message:
-                error.text || "Failed to send message. Please try again later.",
-            });
+    console.error("EmailJS error:", err);
+
+    SetSubmitStatus({
+        type: "error",
+        message:
+            err.text || "Failed to send message. Please try again later.",
+    });
         }finally{
             setIsLoading(false);
         }
