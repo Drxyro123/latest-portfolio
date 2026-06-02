@@ -2,15 +2,15 @@ const experiences = [
    {
         period: "2025-Present",
         role: "Full Stack Developer",
-        company:"Brother industries philippines inc.",
+        company:"Brother Industries Philippines Inc.",
         description: "A Full Stack Developer focused on building efficient, scalable, and user-centered web applications. Skilled in frontend development with React.js and Tailwind CSS, and experienced in backend integration and database systems to deliver complete end-to-end solutions.",
-        technologies: ["C#","Java", "C++", "PHP", "VB.NET", "postgreAdmin","VS Studio", "VS Code", "Arduino", "React", "TailwindCSS", "JavaScript", "TypeScript", "Node.js", "GitHub" ],
+        technologies: ["C#", "C++", "PHP", "postgreAdmin","VS Studio", "VS Code", "Arduino", "React", "TailwindCSS", "JavaScript", "GitHub" ],
         current: true,
     },
      {
         period: "2024",
         role: "UI/UX, SAP Developer(Intern)",
-        company:"Xceler8 Technologies inc.",
+        company:"Xceler8 Technologies Inc.",
         description: "Served as a Lead UI/UX Developer and SAP Developer at Xceler8 Technologies Inc., focused on improving user interfaces, enhancing system usability, and supporting SAP-based applications while designing efficient and user-centered digital experiences.",
         technologies: ["Figma","SAP Adobe form","SQL"],
         current: false,
