@@ -9,9 +9,7 @@ const skills = [
     "PostgreSQL",
     "PHP",
     "C#",
-    "Figma",
     "GitHub",
-    "Java",
     "HTML",
     "CSS"
 ]
