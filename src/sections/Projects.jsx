@@ -4,7 +4,7 @@ const projects = [
         title:"Maintenance Status Monitoring System",
         description:"A real-time monitoring system used to track machine breakdowns, maintenance status, repair progress, technician assignments, and downtime across production lines.",
         image:"/msms_dashboard.png",
-        tags:["C#","C++","Arduino","VS Studio"],
+        tags:["C#","C++","Arduino","VS Studio", "ASP.NET"],
     },
     {
         title:"Tape Casette Inventory Control System",
